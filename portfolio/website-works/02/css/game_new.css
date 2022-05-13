@@ -1,0 +1,367 @@
+/*서브페이지 css 시작*/
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+
+/*서브 네비게이터 css 끝*/
+/*서브페이지 css 시작*/
+#new {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+/*비디오 영역*/
+#video_wrap {
+    width: 1260px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg_video {
+    width: 1260px;
+    height: auto;
+    
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    
+    opacity: 0.7;
+}
+
+#video_wrap h2 {
+    color: #fff;
+    font-family: 'establishRetrosansOTF';
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 35px;
+    bottom: 50px;
+}
+
+#video_wrap h3 {
+    color: #fff;
+    font-family: 'TmonMonsori';
+    font-size: 85px;
+    font-weight: normal;
+    text-transform: capitalize;
+    
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+}
+
+/*발매예정 신작 영역 css*/
+#new_list {
+    width: 1000px;
+    height: 600px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+#new_list .title {
+    width: 1000px;
+    height: 50px;
+    
+    color: #333;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 20px;
+    letter-spacing: -2px;
+    
+    text-align: left;
+    margin: 0 auto 20px;
+}
+
+#new_list .title span {
+    color: #ff703f;
+}
+
+#new_list .title img {
+    display: inline-block;
+    vertical-align: middle;
+    
+    padding-right: 10px;
+}
+
+#new_list .list ul {
+    display: inline-block;
+    vertical-align: middle;
+    /*border: 1px solid #ccc;*/
+    box-shadow: 2px 2px 2px #ccc;
+    
+    margin-bottom: 40px;
+}
+
+#new_list .list .box li.img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+#new_list .list .box li.img p.tit {
+    color: #333;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+#new_list .list #box3 li.img p.tit {
+    color: #fff;
+}
+
+#new_list .list #box5 li.img p.tit {
+    color: #fff;
+}
+
+#new_list .list #box6 li.img p.tit {
+    color: #fff;
+}
+
+#new_list .list .box li.content {
+    width: 300px;
+    height: 80px;
+    background: #fff;
+    position: relative;
+}
+
+#new_list .list .box li.content img {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#new_list .list .box li.content p {
+    color: #555;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: left;
+    
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#new_list .list #box1, #box4 {
+    float: left;
+}
+
+#new_list .list #box3, #box6 {
+    float: right;
+}
+
+#new_list .list #box1 .img {
+    background: url(../images/new_list_img1.jpg)no-repeat center center;
+}
+
+#new_list .list #box2 .img {
+    background: url(../images/new_list_img3.jpg)no-repeat center center;
+}
+
+#new_list .list #box3 .img {
+    background: url(../images/new_list_img2.jpg)no-repeat center center;
+}
+
+#new_list .list #box4 .img {
+    background: url(../images/new_list_img4.jpg)no-repeat center center;
+}
+
+#new_list .list #box5 .img {
+    background: url(../images/new_list_img5.jpg)no-repeat center center;
+}
+
+#new_list .list #box6 .img {
+    background: url(../images/new_list_img6.jpg)no-repeat center center;
+}
+
+/*영역1 - 아르세우스*/
+#new_section1 {
+    width: 1260px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+#new_section1 .box {
+    width: 1260px;
+    height: 792px;
+    background: url(../images/new_section_bg1.png)no-repeat center center;
+    position: relative;
+}
+
+#new_section1 #bg_logo  {
+    width: 150px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+}
+
+#new_section1 #bg_img  {
+    position: absolute;
+    right: -70px;
+    bottom: 0;
+}
+
+#new_section1 h4 {
+    color: #fff;
+    font-family: '국립박물관문화재단클래식M';
+    font-weight: normal;
+    font-size: 21px;
+    letter-spacing: -2px;
+    
+    padding-left: 70px;
+    padding-top: 45px;
+}
+
+#new_section1 h2 {
+    color: #fff;
+    font-family: '국립박물관문화재단클래식M';
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: -2px;
+    
+    padding-left: 70px;
+}
+
+#new_section1 h2 span {
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+
+#new_section1 iframe {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#new_section1 p.txt {
+    color: rgba(255,255,255,0.7);
+    font-family: '국립박물관문화재단클래식M';
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2;
+    
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+#new_section1 p.date {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    left: 70px;
+    bottom: 70px;
+}
+
+#new_section1 #btn_rsv {
+    position: absolute;
+    left: 360px;
+    bottom: 60px;
+}
+
+#new #btn_rsv {
+    width: 170px;
+    height: 40px;
+    border: 1px solid #fff;
+    
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#new #btn_rsv img {
+    width: 20px;
+    padding-left: 10px;
+}
+
+/*영역2 - solar ash*/
+#new_section2 {
+    width: 12260px;
+    margin-bottom: 80px;
+}
+
+#new_section2 .box {
+    width: 1260px;
+    height: 792px;
+    background: url(../images/new_section_bg2.png)no-repeat center center;
+    position: relative;
+}
+
+#new_section2 iframe {
+    position: absolute;
+    right: 80px;
+    top: 165px;
+}
+
+#new_section2 h4 {
+    color: #fff;
+    font-family: 'BMKIRANGHAERANG';
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-align: right;
+    
+    position: absolute;
+    right: 70px;
+    top: 55px;
+}
+
+#new_section2 p.txt {
+    color: rgba(255,255,255,0.7);
+    font-family: 'BMKIRANGHAERANG';
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    text-align: right;
+    
+    position: absolute;
+    right: 70px;
+    top: 490px;
+}
+
+#new_section2 p.date {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    left: 35px;
+    top: 25px;
+}
+
+#new_section2 #btn_rsv {
+    position: absolute;
+    right: 80px;
+    bottom: 70px;
+}
+
+/*서브페이지 css 끝*/

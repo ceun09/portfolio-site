@@ -1,0 +1,102 @@
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+/*서브 네비게이터 css 끝*/
+/*이벤트 상세페이지 - 서브 타이틀 css*/
+#sub_tit {
+    width: 800px;
+    height: 30px;
+    margin: 30px auto 30px;
+    position: relative;
+}
+
+#sub_tit p {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#sub_tit p.head {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+#sub_tit p.date {
+    color: #888;
+    font-size: 17px;
+    letter-spacing: -1px;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+/*
+#sub_tit p.more {
+    color: #ff703f;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border-bottom: 2px solid #ff703f;
+    
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+#sub_tit p.more img {
+    width: 18px;
+    height: 13px;
+    margin-left: 6px;
+}*/
+/*이벤트 상세페이지 영역 css*/
+#event_page {
+    width: 1260px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+#event_page .img {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#event_page p.btn {
+    /*width: 150px;
+    height: 30px;
+    border: 1px solid #888;*/
+    
+    color: #666;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    text-align: center;
+    
+    margin: 40px auto;
+}
+
+#event_page p.btn img {
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}

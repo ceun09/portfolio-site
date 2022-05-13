@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>어나더게임 장바구니</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game_basket.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <!-- prefix free -->
+    <script src="../plugin/prefixfree.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="../plugin/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+</head>
+
+<body>
+    <div class="header-include"></div>
+    <!--서브페이지 시작-->
+    <!--서브페이지 네비게이터-->
+    <div id="sub_nav">
+        <a href="../index.html">
+            <p class="home">홈</p>
+        </a>
+        <p class="arrow">&gt;</p>
+        <a href="game_basket.html">
+            <p class="now">장바구니</p>
+        </a>
+    </div>
+    <!--서브페이지 - 장바구니-->
+    <div id="basket">
+        <div class="board" id="board">
+            <div class="head">
+                <a href="#a" id="selectAll">
+                    <p class="txt">전체선택</p>
+                </a>
+                <p class="line"></p>
+                <a href="#a" id="releaseAll">
+                    <p class="txt">전체해제</p>
+                </a>
+            </div>
+            <div class="tit">
+                <ul class="list">
+                    <li class="name">상품명</li>
+                    <li class="count">수량</li>
+                    <li class="price">상품금액</li>
+                    <li class="price2">배송비</li>
+                </ul>
+            </div>
+            <div class="list" id="basket_list">
+
+                <ul class="list">
+                    <li class="check">
+                        <label for="check1">
+                            <input type="checkbox" id="check1">
+                        </label>
+                    </li>
+                    <li class="img">
+                        <p class="box"><img src="../images/main_best_img1.jpg" alt="링 피트 어드벤처" /></p>
+                    </li>
+                    <li class="name">링 피트 어드벤처</li>
+                    <li class="count">
+                        <input type="number" min="1" max="10" value="1" step="1">
+                    </li>
+                    <li class="price">68,000</li>
+                    <li class="price2">0</li>
+                    <li class="del"></li>
+                </ul>
+                <ul class="list">
+                    <li class="check">
+                        <label for="check2">
+                            <input type="checkbox" id="check2">
+                        </label>
+                    </li>
+                    <li class="img">
+                        <p class="box"><img src="../images/item_img1.jpg" alt="스위치 테크라인 강화유리 액정 보호 필름" /></p>
+                    </li>
+                    <li class="name">SWITCH 테크라인 9H 강화유리(소프트) 액정 보호 필름</li>
+                    <li class="count"><input type="number" min="1" max="10" value="1" step="1"></li>
+                    <li class="price">9,800</li>
+                    <li class="price2">0</li>
+                    <li class="del"></li>
+                </ul>
+                <ul class="list">
+                    <li class="check">
+                        <label for="check3">
+                            <input type="checkbox" id="check3">
+                        </label>
+                    </li>
+                    <li class="img">
+                        <p class="box"><img src="../images/item_img2.jpg" alt="스위치 본체 네온블루 네온레드" /></p>
+                    </li>
+                    <li class="name">SWITCH 본체 네온블루&amp;네온레드</li>
+                    <li class="count"><input type="number" min="1" max="10" value="1" step="1"></li>
+                    <li class="price">350,000</li>
+                    <li class="price2">0</li>
+                    <li class="del"></li>
+                </ul>
+            </div>
+            <div class="down">
+                <a href="#a">
+                    <p id="del_check">선택항목 삭제</p>
+                </a>
+                <p class="line"></p>
+                <a href="#a">
+                    <p id="del_all"><img src="../images/bin_icon.png" alt="장바구니 비우기" />장바구니 비우기</p>
+                </a>
+            </div>
+            <a href="game_event.html">
+                <div class="banner">
+                    <h2>이벤트 참여하고 할인쿠폰 get!</h2>
+                </div>
+            </a>
+        </div>
+        <div id="payment">
+            <div class="top">
+                <a href="#a">
+                    <p class="btn">배송지 입력</p>
+                </a>
+                <a href="#a">
+                    <p class="btn">기본배송지 변경</p>
+                </a>
+            </div>
+            <div class="main">
+                <h2>선택 품목 : 3개</h2>
+                <a href="#a">
+                    <p class="btn">쿠폰 적용</p>
+                </a>
+                <ul>
+                    <li>
+                        <p class="section-left">전체금액</p>
+                        <p class="section-right">50,000 원</p>
+                    </li>
+                    <li>
+                        <p class="section-left">할인금액</p>
+                        <p class="section-right">3,700 원</p>
+                    </li>
+                    <li>
+                        <p class="section-left">배송비</p>
+                        <p class="section-right">0 원</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="result">
+                <p class="txt">결제 금액</p>
+                <p class="price">46,300 원</p>
+                <a href="#a">
+                    <p class="btn">결제하기</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--서브페이지 끝-->
+    <div class="footer-include"></div>
+</body>
+
+</html>

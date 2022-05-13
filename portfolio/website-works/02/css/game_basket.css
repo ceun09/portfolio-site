@@ -1,0 +1,407 @@
+/*서브페이지 css 시작*/
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub_nav p.arrow {
+    margin: -5px 5px 0;
+}
+
+/*서브 네비게이터 css 끝*/
+/*장바구니 영역 css*/
+#basket {
+    width: 1120px;
+    height: 600px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+/*오른쪽 영역 - 결제창 css*/
+#payment {
+    width: 250px;
+    height: 390px;
+    background: #fff;
+    border: 1px solid #ccc;
+    
+    position: sticky;
+    transform: translateX(900px);
+}
+
+#payment div.top {
+    width: inherit;
+    height: 70px;
+    text-align: center;
+}
+
+#payment div.top p {
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    
+    color: #444;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    text-align: center;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    margin: 20px 5px 0;
+}
+
+#payment div.main {
+    width: inherit;
+    height: 180px;
+    background: #f7f7f7;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#payment div.main h2 {
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -1px;
+    
+    padding-left: 20px;
+    padding-top: 17px;
+}
+
+#payment div.main p.btn {
+    width: 75px;
+    height: 20px;
+    background: #ff703f;
+    border-radius: 50px;
+    
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+#payment div.main ul {
+    margin-top: 40px;
+}
+
+#payment div.main li {
+    width: 210px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#payment div.main li p {
+    color: #333;
+    font-size: 12px;
+    letter-spacing: -1px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#payment div.main li .section-right {
+    position: absolute;
+    right: 0;
+}
+
+#payment div.result {
+    width: inherit;
+    height: 140px;
+    position: relative;
+}
+
+#payment div.result p.txt {
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+#payment div.result p.price {
+    color: #ff703f;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#payment div.result p.btn {
+    width: 210px;
+    height: 60px;
+    background: #ff5b59;
+    
+    color: #fff;
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 60px;
+    text-align: center;
+    
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+/*장바구니 리스트(보드) 영역 css*/
+#basket #board {
+    width: 850px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#basket #board div.head {
+    width: 850px;
+    height: 30px;
+    position: relative;
+    
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+#basket #board div.head p {
+    color: #999;
+    font-size: 14px;
+    letter-spacing: -1px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#basket #board div.head p.line {
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+#basket #board ul.list {
+    width: 850px;
+    height: 50px;
+    
+    position: relative;
+}
+
+#basket #board div.tit {
+    width: 850px;
+    height: 50px;
+    background: #f7f7f7;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    line-height: 50px;
+    
+    margin: 0 auto 0;
+}
+
+
+#basket #board div.tit li {
+    font-weight: bold;
+}
+
+#basket #board ul.list li {
+    color: #444;
+    font-size: 15px;
+    letter-spacing: -1px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#basket #board div.list ul {
+    width: 850px;
+    height: 110px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    
+    line-height:110px;
+}
+
+#basket #board div.list li {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/*마이페이지 - 결제내역조회 영역 css*/
+#basket .board {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+#basket .board div.tit .name {
+    position: absolute;
+    left: 230px;
+}
+
+#basket .board div.tit .count {
+    position: absolute;
+    left: 532px;
+}
+
+#basket .board div.tit .price {
+    position: absolute;
+    right: 175px;
+}
+
+#basket .board div.tit .price2 {
+    position: absolute;
+    right: 75px;
+}
+
+#basket .board ul.list .check {
+    width: 50px;
+    height: 110px;
+    text-align: center;
+}
+
+#basket .board ul.list .check input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+    /*display: none;*/
+}
+/*
+label.box {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ccc;
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}*/
+
+#basket .board ul.list .img {
+    width: 100px;
+    height: 110px;
+}
+
+#basket .board ul.list .img .box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    
+    margin-left: 10px;
+    margin-top: 10px;
+    
+    overflow: hidden;
+}
+
+#basket .board ul.list .img .box img {
+    width: 80px;
+    height: 80px;
+    
+    margin: 0 auto;
+} 
+
+#basket .board div.list .name {
+    width: 330px;
+    height: 110px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#basket .board div.list .count {
+    width: 100px;
+    height: 110px;
+    text-align: center;
+}
+
+#basket .board div.list .price {
+    width: 95px;
+    height: 110px;
+    text-align: center;
+}
+
+#basket .board div.list .price2 {
+    width: 95px;
+    height: 110px;
+    text-align: center;
+}
+
+#basket .board div.list .del {
+    width: 30px;
+    height: 30px;
+    background: url(../images/del_icon.png)no-repeat center center;
+    background-size: 10px 10px;
+    cursor: pointer;
+}
+
+#basket .board input[type="number"] {
+    width: 45px;
+    border: 1px solid #ccc;
+    
+    color: #777;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+opacity: 1 !important;
+}
+
+#basket .down {
+    width: 850px;
+    height: 20px;
+}
+#basket .down p {
+    color: #9ea5a8;
+    font-size: 14px;
+    letter-spacing: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 5px;
+}
+#basket .down p.line {
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    margin: 7px 10px 0;
+}
+#basket .down img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+/*하단 미니배너 영역 css*/
+#basket .board .banner {
+    width: 850px;
+    height: 45px;
+    background: #f29b74 url(../images/basket_bn_icon.png)no-repeat 265px center;
+    
+    margin: 20px auto 0;
+}
+#basket .board .banner h2 {
+    color: #fff;
+    font-family: 'GongGothicLight';
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    
+    line-height: 50px;
+    text-align: center;
+}

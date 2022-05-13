@@ -1,0 +1,397 @@
+/*서브페이지 css 시작*/
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+/*서브 네비게이터 css 끝*/
+/*서브페이지 메인 타이틀 css*/
+#tit {
+    color: #333;
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 28px;
+    letter-spacing: -2px;
+    text-align: center;
+    
+    margin: 20px 0;
+}
+/*상품페이지 - 메인배너 css*/
+#goods_bn {
+    width: 1260px;
+    height: 530px;
+    
+    margin: 30px auto 70px;
+    position: relative;
+}
+
+#goods_bn .banner1 {
+    width: 1260px;
+    height: 530px;
+    background: url(../images/main_bn_bg3.jpg)no-repeat;
+    margin: 0 auto;
+    
+    position: relative;
+    
+    
+    animation-name: bn;
+    animation-duration: 2s;
+}
+
+@keyframes bn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+#goods_bn ul.txt {
+    text-align: center;
+}
+
+#goods_bn ul.txt .txt1 {
+    color: #fff;
+    font-family: '국립박물관문화재단클래식M';
+    font-size: 24px;
+    letter-spacing: -2px;
+    
+    padding-top: 50px;
+}
+
+#goods_bn ul.txt .txt2 {
+    color: #fff;
+    font-family: '국립박물관문화재단클래식M';
+    font-size: 37px;
+    letter-spacing: -3px;
+}
+
+#goods_bn ul.txt .btn {
+    width: 95px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    
+    margin: 230px auto 0;
+}
+
+#goods_bn ul.txt .btn a {
+    width: 95px;
+    height: 30px;
+    
+    color: #fff;
+    font-size: 18px;
+    font-family: 'S-CoreDream-4Regular';
+    letter-spacing: -2px;
+    line-height: 30px;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#goods_bn ul.down {
+    position: absolute;
+    left: 110px;
+    bottom: 30px;
+}
+
+#goods_bn ul.down li {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#goods_bn ul.down .txt {
+    color: #505050;
+    font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: -1px;
+    
+    padding-left: 30px;
+}
+#goods_bn ul.down .txt span {
+    font-size: 25px;
+    font-family: 'S-CoreDream-5Medium';
+    letter-spacing: -2px;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+#goods_bn p.arrow_left {
+    position: absolute;
+    left: 20px;
+    top: 250px;
+}
+#goods_bn p.arrow_right {
+    position: absolute;
+    right: 20px;
+    top: 250px;
+}
+
+/*상품페이지 - 서브타이틀 및 정렬 css*/
+#goods_sub_tit {
+    width: 1260px;
+    height: 30px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+#goods_sub_tit p {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 20px;
+}
+
+#goods_sub_tit input[type="radio"] {
+    display: none;
+}
+
+#goods_sub_tit input[name="cate"] + label {
+    color: #666;
+    font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#goods_sub_tit input:checked + label {
+    color: #ff703f;
+    font-size: 20px;
+    font-family: 'S-CoreDream-6Bold';
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#goods_sub_tit label {cursor: pointer;}
+
+#goods_sub_tit p.line {
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    margin: 6px 0 0;
+    vertical-align: top;
+}
+
+#goods_sub_tit select {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    
+    color: #777;
+    font-size: 16px;
+    padding-left: 10px;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*상품페이지 - 상품리스트 영역 css*/
+#goods_list {
+    width: 1260px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+#goods_list ul {
+    width: 250px;
+    height: 370px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 37px 30px;
+    position: relative;
+}
+
+#goods_list ul.box1 {
+    margin-left: 10px;
+}
+
+#goods_list ul.box4 {
+    margin-right: 10px;
+}
+
+#goods_list ul.box5 {
+    margin-left: 10px;
+}
+
+#goods_list ul.box8 {
+    margin-right: 10px;
+}
+
+#goods_list ul.box9 {
+    margin-left: 10px;
+}
+
+#goods_list ul.box12 {
+    margin-right: 10px;
+}
+
+#goods_list ul li.img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    
+    position: relative;
+}
+
+#goods_list ul li.img p.sold_out {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0,0,0,0.5);
+    
+    color: #fff;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    position: absolute;
+    bottom: 0;
+}
+
+#goods_list ul li.img:hover img {
+    transform: scale(1.2);
+    transition-timing-function: 0.5s;
+}
+
+#goods_list ul li.txt {
+    width: 250px;
+    height: 50px;
+    
+    color: #626262;
+    font-size: 15px;
+    font-family: 'NanumBarunGothic';
+    letter-spacing: -1px;
+    
+    padding-top: 15px;
+}
+
+#goods_list ul li.txt:hover {
+    text-decoration: underline;
+}
+
+#goods_list ul li.shop {
+    position: relative;
+}
+
+#goods_list ul li.shop p {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#goods_list ul li.shop p.price {
+    color: #000;
+    font-size: 18px;
+    font-family: 'BMJUA';
+}
+
+#goods_list ul li.shop .won {
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'NanumBarunGothic';
+}
+
+#goods_list ul li.shop .before {
+    color: #5a5d5a;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'NanumBarunGothic';
+    text-decoration: line-through;
+    
+    padding-right: 10px;
+}
+
+#goods_list ul li.shop p.btn_basket {
+    position: absolute;
+    right: 45px;
+    bottom: 1px;
+}
+
+#goods_list ul li.shop p.btn_like {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+#goods_list ul li.mark {
+    position: absolute;
+    bottom: 0;
+}
+
+#goods_list ul li.mark p {
+    height: 15px;
+    line-height: 15px;
+    border-radius: 30px;
+    
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -1px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#goods_list ul li.mark p.new {
+    width: 40px;
+    background: #f89828;
+}
+
+#goods_list ul li.mark p.hot {
+    width: 40px;
+    background: #ee3b3e;
+}
+/*페이지 표시 CSS*/
+#page {
+    width: 1260px;
+    height: 30px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+#page p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    
+    cursor: pointer;
+}
+
+#page p input[type="radio"] {
+    display: none;
+}
+
+#page input:checked + label {
+    color: #ff703f;
+    font-size: 21px;
+    font-family: 'S-CoreDream-6Bold';
+}
+
+#page label {
+    color: #666;
+    font-size: 21px;
+    font-family: 'S-CoreDream-3Light';
+    
+    cursor: pointer;
+}

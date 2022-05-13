@@ -1,0 +1,334 @@
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+/*서브 네비게이터 css 끝*/
+
+/*서브페이지 - 상세페이지 css*/
+#product {
+    width: 1120px;
+    margin: 60px auto 150px;
+}
+
+#product div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*상세페이지 - 이미지(왼쪽) 영역 css*/
+#product_img {
+    width: 560px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#product_img .img {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+#product_img > .img img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#product_img .img_small {
+    width: 500px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#product_img .img_small ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#product_img .img_small ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#product_img .img_small .img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-right: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#product_img .img_small .img:first-child {
+    border: 1px solid #444;
+}
+
+#product_img .img_small .img:last-child {
+    margin-right: 0;
+}
+
+#product_img .img_small .img img {
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+}
+
+/*하단 미니배너 영역 css*/
+#product_img .banner {
+    width: 500px;
+    height: 45px;
+    background: #549dd3 url(../images/basket_bn_icon.png)no-repeat 95px center;
+    
+    margin: 20px auto 0;
+}
+
+#product_img .banner h2 {
+    color: #fff;
+    font-family: 'GongGothicLight';
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    
+    line-height: 50px;
+    text-align: center;
+}
+
+/*상세페이지 - 세부설명(오른쪽) 영역 css*/
+#product_content {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#product_content li.line {
+    width: 500px;
+    height: 1px;
+    background: #ddd;
+    margin: 20px auto;
+}
+
+#product_content .head {
+    color: #333;
+    font-size: 31px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+#product_content ul.info {
+    position: relative;
+}
+
+#product_content ul.info .box {
+    width: 480px;
+    position: relative;
+}
+
+#product_content ul.info .box li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#product_content ul.info li.section {
+    margin-top: 15px;
+}
+
+#product_content ul.info .box li.rank span {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+#product_content ul.info .box li.review {
+    color: #919191;
+    font-size: 13px;
+    letter-spacing: -1px;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+#product_content ul.info .box li.mark {
+    position: absolute;
+    right: 0;
+}
+
+#product_content ul.info .box li.mark p {
+    height: 15px;
+    line-height: 15px;
+    border-radius: 30px;
+    
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -1px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#product_content ul.info .box li.mark p.new {
+    width: 40px;
+    background: #f89828;
+}
+
+#product_content ul.info .box li.mark p.hot {
+    width: 40px;
+    background: #ee3b3e;
+}
+
+#product_content ul.info .box li.mark p.time {
+    width: 68px;
+    background: #ff703f;
+}
+
+#product_content ul.info li.txt {
+    color: #555;
+    font-size: 15px;
+    letter-spacing: -1px;
+    
+    margin: 20px auto;
+    padding-left: 10px;
+}
+
+#product_content span.right {
+    position: absolute;
+    left: 170px;
+}
+
+#product_content #red {
+    color: #ee3b3e;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+#product_content span.before {
+    color: #5a5d5a;
+    font-weight: normal;
+    text-decoration: line-through;
+    
+    position: absolute;
+    left: 260px;
+    padding-top: 2px;
+}
+
+/*옵션 영역*/
+#product_content .option .add {
+    color: #777;
+    font-size: 16px;
+    letter-spacing: -1px;
+    
+    padding-left: 10px;
+}
+
+#product_content .option .add img {
+    padding-right: 3px;
+}
+
+#product_content .option .box {
+    width: 480px;
+    height: 60px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 15px auto 0;
+    
+    position: relative;
+}
+
+#product_content .option .box .txt1 {
+    color: #999;
+    font-size: 13px;
+    letter-spacing: -1px;
+    
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#product_content .option .box .txt2 {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+#product_content .option .box .price {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+/*버튼 영역*/
+#product_content .btns {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#product_content .btns li {
+    width: 150px;
+    height: 45px;
+    border: 1px solid #ff703f;
+    border-radius: 5px;
+    background: #fff;
+    
+    color: #ff703f;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 15px;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    position: relative;
+    margin-left: 15px;
+}
+
+#product_content .btns #buy {
+    width: 120px;
+    background: #ff703f;
+    color: #fff;
+    font-size: 17px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#product_content .btns li img {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}

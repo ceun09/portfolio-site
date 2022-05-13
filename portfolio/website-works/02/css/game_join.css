@@ -1,0 +1,402 @@
+/*서브페이지 css 시작*/
+/*서브페이지 메인 타이틀 css*/
+#tit {
+    width: 1260px;
+    
+    text-align: center;
+    margin: 50px auto 40px;
+}
+
+#tit h2 {
+    color: #333;
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 28px;
+    letter-spacing: -2px;
+}
+
+/*회원가입 영역 css*/
+#join_section {
+    width: 1000px;
+    margin: 0 auto;
+}
+#join_section .head {
+    text-align: right;
+    position: relative;
+}
+#join_section .head p {
+    display: inline-block;
+    vertical-align: middle;
+}
+#join_section .head p.shape {
+    width: 3px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#join_section .head p.tit {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+#join_section .head p.sub_tit {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+/*정보입력창 영역 css*/
+#join_section ul.frame {
+    width: 1000px;
+        
+    margin: 10px auto;
+}
+#join_section ul.frame li p {
+    display: inline-block;
+    vertical-align: middle;
+}
+#join_section ul.frame li {
+    width: 1000px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    
+    z-index: 30;
+}
+#join_section ul.frame label.left {
+    width: 160px;
+    height: 50px;
+    background: #fbf9fa;
+    display: inline-block;
+    
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#join_section input[type="text"], input[type="password"], input[type="tel"] {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#join_section input[placeholder] {
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    padding-left: 5px;
+}
+#join_section select {
+    background: #fff;
+    border: 1px solid #ccc;
+    
+    color: #666;
+    font-size: 14px;
+}
+#join_section span.mark {
+    color: #ff5501;
+}
+
+fieldset {
+    margin-bottom: 50px;
+}
+
+/*개인회원정보 입력*/
+.section1 ul {
+    background: #fff;
+    border-top: 3px solid #ff5501;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.section1 .head p.shape {
+    background: #ff5501;
+}
+
+.section1 .head p.tit {
+    color: #ff5501;
+}
+
+.section1 input[type="text"], input[type="password"] {
+    width: 140px;
+    height: 25px;
+}
+
+.section1 .gender p {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding-left: 3px;
+}
+
+.section1 .gender input[id="man"] {
+    margin-left: 10px;
+}
+
+.section1 .birth select {
+    width: 60px;
+    height: 30px;
+        
+    margin-right: 10px;
+}
+
+.section1 select.year {
+    width: 80px;
+}
+
+.section1 .tel select {
+    width: 80px;
+    height: 30px;
+}
+
+.section1 input[type="tel"] {
+    width: 80px;
+    height: 25px;
+}
+
+#join_section .section1 li.addr {
+    height: 150px;
+    position: relative;
+}
+
+#join_section  .section1 li.addr label.left {
+    height: 150px;
+}
+
+.section1 li.addr input[type="text"] {
+    width: 135px;
+    height: 25px;
+    background: #fbf9fa;
+    border: 1px solid #ccc;
+}
+
+.section1 li.addr p.txt {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: -1px;
+    
+    position: absolute;
+    left: 190px;
+    top: 35px;
+}
+
+.section1 li.addr input.txt3 {
+    width: 500px;
+    background: #fff;
+    
+    position: absolute;
+    left: 185px;
+    top: 72px;
+}
+
+.section1 li.addr input.txt4 {
+    width: 500px;
+    background: #fff;
+    
+    position: absolute;
+    left: 185px;
+    top:105px;
+}
+
+.section1 li p.btn {
+    width: 95px;
+    height: 20px;
+    background: #ff5501;
+    border-radius: 50px;
+    
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -2px;
+    line-height: 20px;
+    text-align: center;
+    
+    margin-left: 10px;
+}
+
+.section1 li.addr p.btn {
+    width: 85px;
+}
+
+.section1 .email select {
+    width: 110px;
+    height: 25px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*추가정보*/
+.section2 > ul {    
+    background: #fff;
+    border-top: 3px solid #555;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.section2 .head p.shape {
+    background: #555;
+}
+
+.section2 .head p.tit {
+    color: #333;
+}
+
+.section2 select {
+    width: 180px;
+    height: 25px;
+}
+
+#join_section .section2 li.inter {
+    height: 75px;
+    position: relative;
+}
+
+#join_section .section2 li.inter label.left {
+    height: 75px;
+}
+
+.section2 li.inter ul {
+    width: 700px;
+    height: 20px;
+    line-height: 20px;
+    
+    position: absolute;
+    left: 185px;
+}
+
+.section2 li.inter label {
+    border: 0;
+}
+
+.section2 li.inter .row1 {
+    border: 0;
+    position: absolute;
+    top: 10px;
+}
+
+.section2 li.inter .row2 {
+    position: absolute;
+    top: 40px;
+}
+
+.section2 li.inter input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    
+    vertical-align: middle;
+}
+
+.section2 li.inter label[for^="m"] {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding-left: 4px;
+    padding-right: 9px;
+}
+
+.section2 input[type="text"] {
+    width: 140px;
+    height: 25px;
+}
+
+/*약관동의*/
+.section3 > ul {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 3px solid #555;
+    
+    position: relative;
+}
+
+.section3 .head p.shape {
+    background: #555;
+}
+
+.section3 .head p.tit {
+    color: #333;
+}
+
+.section3 label.tit {
+    width: 1000px;
+    height: 50px;
+    background: #fbf9fa;
+    
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 50px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    position: absolute;
+    top: 0;
+    
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#join_section .section3 li.content {
+    width: 1000px;
+    height: 200px;
+    border-bottom: 1px solid #ccc;
+    
+    text-align: center;
+}
+
+#join_section .section3 li.content textarea {
+    width: 950px;
+    height: 180px;
+    border: none;
+    resize: none;
+    
+    color: #555;
+    
+    margin: 10px auto;
+}
+
+#join_section .section3 li.certi {
+    width: 1000px;
+    height: 50px;
+    border: 0;
+}
+
+.section3 label.certi {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    
+    position: absolute;
+    right: 30px;
+}
+
+/*회원가입 버튼 css*/
+.join_btn {
+    text-align: center;
+    margin: 50px 0 80px;
+}
+.join_btn input[type="submit"] {
+    width: 400px;
+    height: 60px;
+    background: #ff703f;
+    border: 0;
+    
+    color: #fff;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 26px;
+    letter-spacing: -2px;
+    cursor: pointer;
+    
+    margin: 0 auto;
+}
+/*서브페이지 css 끝*/

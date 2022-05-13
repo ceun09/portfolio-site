@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>어나더게임 마이페이지</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game_mypage.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <!-- prefixfree -->
+    <script src="../js/prefixfree.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="../plugin/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+</head>
+
+<body>
+    <div class="header-include"></div>
+    <!--서브페이지 네비게이터-->
+    <div id="sub_nav">
+        <a href="../index.html">
+            <p class="home">홈</p>
+        </a>
+        <p class="arrow"><img src="../images/sub_nav_arrow.png"></p>
+        <a href="game_mypage.html">
+            <p class="now">마이페이지</p>
+        </a>
+    </div>
+    <div id="mypage">
+        <!--마이페이지 - 개인정보 프로필 영역-->
+        <div class="top">
+            <ul class="box">
+                <li class="info">
+                    <ul class="profile">
+                        <li class="icon"></li>
+                        <a href="#a">
+                            <li class="edit">정보 수정</li>
+                        </a>
+                    </ul>
+                    <ul class="txt">
+                        <li class="txt1">안녕하세요!<br><span class="black">홍길동</span> 님</li>
+                        <li class="txt2">
+                            <span class="red">15일</span> 연속 출석 중이군요!
+                            <a href="#a">
+                                <p class="btn">출석판 보기</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <ul class="line"></ul>
+                    <a href="#a">
+                        <ul class="coupon">
+                            <li class="icon"><img src="../images/mypage_icon1.png"></li>
+                            <li class="txt">
+                                보유 쿠폰<br>
+                                <span class="orange">5</span> 장
+                            </li>
+                        </ul>
+                    </a>
+                    <ul class="line"></ul>
+                    <a href="#a">
+                        <ul class="point">
+                            <li class="icon"><img src="../images/mypage_icon2.png"></li>
+                            <li class="txt">
+                                적립포인트<br>
+                                <span class="orange">2,405</span> P
+                            </li>
+                        </ul>
+                    </a>
+                    <ul class="line"></ul>
+                    <a href="#a">
+                        <ul class="like">
+                            <li class="icon"><img src="../images/mypage_icon3.png"></li>
+                            <li class="txt">
+                                관심상품<br>
+                                <span class="orange">11</span> 개
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--마이페이지 - 관심키워드 영역-->
+        <div class="keyword">
+            <p class="head">관심 키워드</p>
+            <a href="#a">
+                <p class="item">액션</p>
+            </a>
+            <a href="#a">
+                <p class="item">시뮬레이션</p>
+            </a>
+            <a href="#a">
+                <p class="item">아케이드</p>
+            </a>
+            <a href="#a">
+                <p class="item">추가<img src="../images/plus.png"></p>
+            </a>
+        </div>
+        <!--마이페이지 - 결제내역조회 영역-->
+        <div class="buy_list" id="board">
+            <div class="head">
+                <h2>결제내역조회</h2>
+                <p class="date">결제일: 2021.12.26.</p>
+                <p class="num">결제번호: 20211226-ABD</p>
+            </div>
+            <div class="tit">
+                <ul class="list">
+                    <li class="name">상품명</li>
+                    <li class="count">수량</li>
+                    <li class="price">상품금액</li>
+                    <li class="status">상태</li>
+                </ul>
+            </div>
+            <div class="list">
+                <a href="#a">
+                    <ul class="list">
+                        <li class="img">
+                            <p class="box"><img src="../images/main_best_img1.jpg"></p>
+                        </li>
+                        <li class="name">링 피트 어드벤처</li>
+                        <li class="count">1</li>
+                        <li class="price">68,000</li>
+                        <li class="status">결제완료</li>
+                    </ul>
+                    <ul class="list">
+                        <li class="img">
+                            <p class="box"><img src="../images/item_img1.jpg"></p>
+                        </li>
+                        <li class="name">SWITCH 테크라인 9H 강화유리(소프트) 액정 보호 필름</li>
+                        <li class="count">1</li>
+                        <li class="price">9,800</li>
+                        <li class="status">배송대기중</li>
+                    </ul>
+                    <ul class="list" id="last">
+                        <li class="img">
+                            <p class="box"><img src="../images/item_img2.jpg"></p>
+                        </li>
+                        <li class="name">SWITCH 본체 네온블루&amp;네온레드</li>
+                        <li class="count">2</li>
+                        <li class="price">350,000</li>
+                        <li class="status">결제완료</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="down">
+                <ul class="list">
+                    <li class="count">총 <span class="orange">3</span>개 상품</li>
+                    <li class="txt">총 결제금액</li>
+                    <li class="price"><span class="orange">427,000</span></li>
+                    <li class="status">
+                        <p class="txt">배송대기중</p>
+                        <a href="#a">
+                            <p class="btn">배송조회</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--서브페이지 - 페이지 표시-->
+        <div id="page">
+            <p><input type="radio" name="page" id="pg1" checked>
+                <label for="pg1">1</label>
+            </p>
+            <p><input type="radio" name="page" id="pg2">
+                <label for="pg2">2</label>
+            </p>
+            <p><input type="radio" name="page" id="pg3">
+                <label for="pg3">3</label>
+            </p>
+            <p class="arrow_r"><img src="../images/page_arrow_r.png"></p>
+        </div>
+        <!--마이페이지 - 문의내역-->
+        <div class="question" id="board">
+            <div class="head">
+                <h2>문의내역</h2>
+                <a href="game_service.html">
+                    <p class="btn">문의하기<img src="../images/sub_tit_arrow.png"></p>
+                </a>
+            </div>
+            <div class="tit">
+                <ul class="list">
+                    <li class="cate">분류</li>
+                    <li class="content">문의사항</li>
+                    <li class="status">답변상태</li>
+                    <li class="date">등록일</li>
+                </ul>
+            </div>
+            <div class="list">
+                <a href="#a">
+                    <ul class="list">
+                        <li class="cate">[반품 문의]</li>
+                        <li class="content">닌텐도 스위치 파우치(미사용) 다른 색상으로 교환하고 싶은데...</li>
+                        <li class="status">대기중</li>
+                        <li class="date">2021.12.29.</li>
+                    </ul>
+                </a>
+                <a href="#a">
+                    <ul class="list">
+                        <li class="cate">[기타]</li>
+                        <li class="content">비밀번호를 까먹었는데 조회가 안 돼요ㅠㅠㅠㅠㅠ</li>
+                        <li class="status">완료</li>
+                        <li class="date">2021.09.13.</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--서브페이지 - 페이지 표시-->
+    <div id="page">
+            <p><input type="radio" name="page2" id="pg1" checked>
+                <label for="pg1">1</label>
+            </p>
+            <p class="arrow_r"><img src="../images/page_arrow_r.png"></p>
+        </div>
+    <!--서브페이지 끝-->
+    <div class="footer-include"></div>
+</body>
+
+</html>

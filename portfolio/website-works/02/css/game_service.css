@@ -1,0 +1,284 @@
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+
+/*서브 네비게이터 css 끝*/
+/*서브페이지 - 고객센터 css*/
+/*고객센터 - 상단영역 css*/
+#cs_top {
+    width: 1120px;
+    margin: 50px auto 80px;
+}
+
+#cs_top .box {
+    width: 1120px;
+    height: 210px;
+    background: #f7f7f7;
+    border-radius: 10px;
+
+    text-align: center;
+    position: relative;
+}
+
+#cs_top .box ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cs_top .box ul[class ^="box"] {
+    width: 520px;
+    height: 210px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+#cs_top .box ul[class ^="box"] .icon {
+    width: 90px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cs_top .box ul[class ^="box"] .txt1 {
+    color: #555;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-align: left;
+
+    padding-left: 160px;
+    padding-top: 70px;
+}
+
+#cs_top .box ul[class ^="box"] .txt2 {
+    color: #333;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 27px;
+    letter-spacing: -2px;
+    text-align: left;
+
+    padding-left: 160px;
+    padding-top: 5px;
+}
+
+#cs_top .box ul[class ^="box"] .txt2 img {
+    width: 12px;
+    height: 23px;
+    margin-left: 5px;
+}
+
+#cs_top .box ul.line {
+    width: 1px;
+    height: 160px;
+    background: #ccc;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*고객센터 - 자주 묻는 질문 영역 css*/
+#cs_main {
+    width: 1120px;
+    margin: 0 auto 20px;
+}
+
+#cs_main div.head {
+    width: 1120px;
+    height: 30px;
+    position: relative;
+    
+    margin: 0 auto 20px;
+}
+#cs_main div.head p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cs_main div.head p.txt {
+    color: #333;
+    font-size: 27px;
+    font-family: 'S-CoreDream-5Medium';
+    letter-spacing: -2px;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#cs_main div.head input[type="search"] {
+    width: 230px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    
+    line-height: 30px;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+}
+
+#cs_main div.head input[placeholder] {
+    font-size: 12px;
+    letter-spacing: -1px;
+    padding-left: 10px;
+}
+
+#cs_main div.head input[type="submit"] {
+    width: 50px;
+    height: 30px;
+    background: #47484a;
+    
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    text-align: center;
+    
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+#cs_main div.head ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cs_main div.list {
+    border-top: 2px solid #ccc;
+}
+
+#cs_main .question {
+    width: 1120px;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    
+    line-height: 50px;
+    position: relative;
+    
+    cursor: pointer;
+}
+
+#cs_main .question li {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cs_main div.list .cate {
+    width: 150px;
+    
+    color: #ff703f;
+    letter-spacing: -1px;
+    
+    text-align: center;
+}
+
+#cs_main div.list .name {
+    color: #333;
+    font-family: 'NanumBarunGothic';
+    font-weight: normal;
+    letter-spacing: -1px;
+    
+    padding-left: 20px;
+}
+
+#cs_main .question .more {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    
+    position: absolute;
+    right: 0;
+    
+    cursor: pointer;
+}
+
+#cs_main .question .more img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+#cs_main div.list a:hover li.name {
+    text-decoration: underline;
+}
+
+/*자주 묻는 질문 - 숨김 내용 영역 css*/
+#cs_main .answer {
+    width: 1120px;
+    height: 100px;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+
+#cs_main .answer p {
+    color: #666;
+    font-size: 15px;
+    letter-spacing: -1px;
+    
+    padding-left: 180px;
+    padding-top: 15px;
+}
+
+
+/*페이지 표시 CSS*/
+#page {
+    width: 1260px;
+    height: 30px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+#page p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+
+    cursor: pointer;
+}
+
+#page p input[type="radio"] {
+    display: none;
+}
+
+#page input:checked + label {
+    color: #ff703f;
+    font-size: 21px;
+    font-family: 'S-CoreDream-6Bold';
+}
+
+#page label {
+    color: #666;
+    font-size: 21px;
+    font-family: 'S-CoreDream-3Light';
+
+    cursor: pointer;
+}

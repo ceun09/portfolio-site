@@ -1,0 +1,651 @@
+/*서브 네비게이터 css 시작*/
+#sub_nav {
+    width: 1260px;
+    height: 50px;
+    margin: 0 auto;
+}
+#sub_nav p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 50px;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+#sub_nav p.arrow {
+    margin: -5px 10px 0;
+}
+/*서브 타이틀 css*/
+#sub_tit {
+    width: 1260px;
+    height: 30px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+#sub_tit p {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#sub_tit p.head {
+    color: #333;
+    font-size: 27px;
+    font-family: 'S-CoreDream-5Medium';
+    letter-spacing: -2px;
+    line-height: 30px;
+}
+
+#sub_tit p.more {
+    color: #5a5d5a;
+    font-size: 15px;
+    letter-spacing: -1px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#sub_tit p.more img {
+    width: 7px;
+    height: 12px;
+    margin-left: 6px;
+}
+
+#sub_tit span {
+    color: #ff703f;
+}
+
+
+/*베스트상품 - 메인배너*/
+#best_bn {
+    width: 1120px;
+    height: 300px;
+    background: url(../images/best_bn_bg.jpg)no-repeat center center;
+
+    margin: 50px auto 70px;
+    text-align: center;
+
+    position: relative;
+}
+
+#best_bn h2 {
+    color: #fff;
+    font-family: 'S-CoreDream-6Bold';
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: -2px;
+
+    position: absolute;
+    left: 165px;
+    top: 90px;
+}
+
+#best_bn h4 {
+    color: #fff;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: -1px;
+
+    position: absolute;
+    left: 100px;
+    top: 170px;
+}
+
+/*베스트상품 - 실시간 인기키워드*/
+#best_rank {
+    width: 1260px;
+    margin: 0 auto 70px;
+    position: relative;
+}
+
+#best_rank #sub_tit {
+    width: 1120px;
+}
+
+#rank {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    z-index: 10;
+}
+
+#rank ul {
+    width: 300px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#rank li.orange {
+    width: inherit;
+    height: 45px;
+    background: #ff703f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#rank li {
+    width: 300px;
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+
+    color: #848484;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 17px;
+    letter-spacing: -2px;
+    line-height: 45px;
+
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 20;
+}
+
+#rank li span {
+    color: #333;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+#rank li p {
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+    text-align: center;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#rank li p img {
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+
+#best_rank .section {
+    width: 1260px;
+    height: 460px;
+    background: #754236;
+    margin: 70px auto 0;
+    position: relative;
+}
+
+#best_rank .section p.img {
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.8) url(../images/rank_img1.jpeg)no-repeat center center;
+    background-size: 420px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 450px;
+    bottom: 85px;
+
+    cursor: pointer;
+}
+
+#best_rank .section p.img:hover {
+    opacity: 0.8;
+}
+
+#best_rank .section p.img_bg {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+
+#best_rank .section li.tit {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+#best_rank .section li.tit h2 {
+    font-size: 28px;
+    font-family: 'S-CoreDream-6Bold';
+    font-weight: normal;
+    letter-spacing: 0.7px;
+
+}
+
+#best_rank .section li.tit h4 {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    font-style: italic;
+}
+
+#best_rank .section li.txt {
+    color: #fff;
+    font-family: 'GongGothicLight';
+    font-size: 12px;
+    line-height: 1.9;
+
+    text-align: center;
+    padding-left: 420px;
+    padding-top: 70px;
+}
+
+#best_rank .section li.id {
+    color: #ccc;
+    font-family: 'GongGothicLight';
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    padding-left: 890px;
+    padding-top: 20px;
+}
+
+#best_rank .section li.btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-align: center;
+
+    margin-left: 780px;
+    margin-top: 25px;
+
+}
+
+#best_rank .section li.btn:hover {
+    background: #fff;
+    color: #754236;
+}
+
+/*베스트상품 - 먼슬리 베스트*/
+#best_monthly {
+    width: 1260px;
+    margin: 0 auto 70px;
+}
+
+#best_monthly #sub_tit {
+    width: 1120px;
+}
+
+#best_monthly .section {
+    width: 1120px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#best_monthly .section ul li.tit {
+    color: #555;
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+
+    padding-top: 40px;
+}
+
+#best_monthly .section ul li.txt p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#best_monthly .section ul li.txt p.txt {
+    color: #666;
+    font-size: 16px;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: -1px;
+}
+
+#best_monthly .section ul li.txt a:hover p.txt {
+    text-decoration: underline;
+}
+
+#best_monthly .section ul li.txt p.line {
+    width: 1px;
+    height: 15px;
+    background: #666;
+    margin: 0 10px;
+}
+
+#best_monthly .section ul li.btn {
+    width: 95px;
+    height: 30px;
+    border: 1px solid #ccc;
+
+    color: #888;
+    font-size: 15px;
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px auto 0;
+}
+
+#best_monthly .section ul.left {
+    width: 560px;
+    text-align: center;
+}
+
+#best_monthly .section ul[class^=right] {
+    width: 560px;
+    height: 275px;
+}
+
+#best_monthly .section ul[class^=right] li.tit {
+    font-size: 22px;
+
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+
+#best_monthly .section ul[class^=right] li.txt {
+    position: absolute;
+    left: 220px;
+    top: 150px;
+}
+
+#best_monthly .section ul[class^=right] li.btn {
+    position: absolute;
+    left: 220px;
+    top: 170px;
+}
+
+#best_monthly .section ul.right_up {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#best_monthly .section ul.right_down {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#best_monthly .section ul[class^=right] li.img {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+#best_monthly .section ul[class^=right] li.img img {
+    width: 170px;
+    height: 170px;
+}
+
+#best_monthly .section .line_v {
+    width: 1px;
+    height: 480px;
+    background: #ddd;
+
+    position: absolute;
+    left: 560px;
+    top: 35px;
+}
+
+#best_monthly .section .line_h {
+    width: 480px;
+    height: 1px;
+    background: #ddd;
+
+    position: absolute;
+    right: 40px;
+    top: 275px;
+}
+
+/*베스트상품 - 카테고리별 베스트상품*/
+#best_cate {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#best_cate #sub_tit {
+    width: 1120px;
+    margin-bottom: 20px;
+}
+
+/*상품페이지 - 서브타이틀 및 정렬 css*/
+#best_cate .category {
+    width: 1120px;
+    height: 30px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+.category input[type="radio"] {
+    display: none;
+}
+
+.category label {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-left: 0;
+
+    color: #888;
+    font-size: 15px;
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: inline-block;
+    vertical-align: bottom;
+
+    margin-left: -6px;
+
+    cursor: pointer;
+}
+
+.category input[id="all"] + label {
+    border-left: 1px solid #ccc;
+    margin-left: 0;
+}
+
+.category label:hover {
+    color: #ff703f;
+}
+
+.category input:checked + label {
+    background: #47484a;
+    color: #fff;
+}
+
+/*
+#best_cate .category p.head {
+    color: #666;
+    font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: -2px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#best_cate .category p.head:hover {
+    color: #ff703f;
+    font-family: 'S-CoreDream-4Regular';
+}
+*/
+
+#best_cate .list {
+
+    text-align: center;
+}
+
+#best_cate .list ul {
+    width: 250px;
+    height: 370px;
+    display: inline-block;
+    vertical-align: middle;
+
+    text-align: left;
+
+    margin: 0 20px 30px;
+    position: relative;
+}
+
+#best_cate .list ul.box4 {
+    margin-right: 0px;
+}
+
+#best_cate .list ul.box8 {
+    margin-right: 0px;
+}
+
+#best_cate .list ul li.img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+#best_cate .list ul li.img:hover img {
+    transform: scale(1.2);
+    transition-timing-function: 0.5s;
+}
+
+#best_cate .list ul li.txt {
+    width: 250px;
+    height: 50px;
+
+    color: #626262;
+    font-size: 15px;
+    font-family: 'NanumBarunGothic';
+    letter-spacing: -1px;
+
+    padding-top: 15px;
+}
+
+#best_cate .list ul li.txt:hover {
+    text-decoration: underline;
+}
+
+#best_cate .list ul li.shop {
+    position: relative;
+}
+
+#best_cate .list ul li.shop p {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#best_cate .list ul li.shop p.price {
+    color: #000;
+    font-size: 18px;
+    font-family: 'BMJUA';
+}
+
+#best_cate .list ul li.shop .won {
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'NanumBarunGothic';
+}
+
+#best_cate .list ul li.shop .before {
+    color: #5a5d5a;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'NanumBarunGothic';
+    text-decoration: line-through;
+
+    padding-right: 10px;
+}
+
+#best_cate .list ul li.shop p.btn_basket {
+    position: absolute;
+    right: 45px;
+    bottom: 1px;
+}
+
+#best_cate .list ul li.shop p.btn_like {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+#best_cate .list ul li.mark {
+    position: absolute;
+    bottom: 0;
+}
+
+#best_cate .list ul li.mark p {
+    height: 20px;
+    line-height: 20px;
+
+    color: #1e1f23;
+    font-size: 12px;
+    letter-spacing: -1px;
+    border: 1px solid #ccc;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#best_cate .list ul li.mark p.ps {
+    width: 35px;
+}
+
+#best_cate .list ul li.mark p.switch {
+    width: 80px;
+}
+
+#best_cate .list ul li.mark p.xbox {
+    width: 40px;
+    text-transform: capitalize;
+}
+
+/*베스트상품 - 미니배너1 css*/
+#best_bn_m1 {
+    width: 1260px;
+    height: 140px;
+    background: url(../images/best_bn1_bg.jpg)no-repeat center center;
+    margin: 50px auto 100px;
+}
+
+#best_bn_m1 h2 {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Moebius Korea';
+    letter-spacing: -1px;
+
+    padding-left: 600px;
+    padding-top: 30px;
+}
+
+#best_bn_m1 p {
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Moebius Korea';
+    letter-spacing: -1px;
+
+    padding-left: 600px;
+    padding-top: 5px;
+}
+
+#best_bn_m1 img {
+    margin-left: 10px;
+}
