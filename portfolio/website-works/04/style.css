@@ -1,0 +1,153 @@
+/* Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* Default CSS */
+html {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* common CSS */
+.main, .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Main Section */
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url(images/museum.jpg) no-repeat center center / cover;
+}
+.darkness {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.3;
+}
+.main header {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  color: #f2f2f2;
+  text-align: center;
+}
+.main header h1 {
+  font-size: 4.5em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.main header p {
+  margin-top: 1.3em;
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+/* Menu Section */
+.menu {
+  width: 100%;
+  height: 100vh;
+  background: url(images/museum-art.jpg) no-repeat center center / cover;
+  z-index: -1;
+}
+.menu-bar {
+  width: 30%;
+  height: 60%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.menu-bar a {
+  padding: 10px;
+  position: relative;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 4em;
+  color: #2c2c2c;
+  text-transform: capitalize;
+}
+.menu-bar a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff7979;
+  z-index: -1;
+  transition: 0.5s;
+}
+.menu-bar a:hover:before {
+  width: 100%;
+}
+
+/* Button to open and close the Menu */
+.btn {
+  width: 100px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn i {
+  font-size: 2.5em;
+  color: #130f40;
+  line-height: 120px;
+}
+.btn-open {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+.btn-close {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+/* Button Hover */
+.btn:hover {
+  width: 150px;
+}
+.btn:hover i {
+  color: #eb4d4b;
+}
+
+/* Button Active */
+.btn-open {
+  transform: translate(-100%,-50%);
+}
+.btn-close {
+  transform: translate(100%,-50%);
+}
+.btn.active {
+  transform: translate(0,-50%);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exhibition 2022</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- FontAwesome CDN -->
+  <script src="https://kit.fontawesome.com/1d7f6f41b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <header>
+        <h1>Exhibition 2022</h1>
+        <p>
+          The museum was built in 1997. Numerous works and artifacts exist, and new exhibitions are held every week and every month. Numerous visitors, from children to the elderly, visited. It is a museum with social value that connects the past and the present. We sincerely hope that our museum will be a good experience for you, too!
+        </p>
+      </header>
+      <div class="darkness"></div>
+    </div>
+    <div class="menu">
+      <div class="menu-bar">
+        <a class="art" href="#none">art</a>
+        <a class="gallery" href="#none">gallery</a>
+        <a class="history" href="#none">history</a>
+        <a class="event" href="#none">event</a>
+      </div>
+    </div>
+  </div>
+  <div class="btn btn-open active"><i class="fa-solid fa-bars"></i></div>
+  <div class="btn btn-close"><i class="fa-solid fa-xmark"></i></div>
+</body>
+<script>
+  $('.btn-open').click(function() {
+    $(this).removeClass('active')
+    $('.btn-close').addClass('active')
+    $('.main').fadeOut()
+    $('.menu').fadeIn()
+  })
+  $('.btn-close').click(function() {
+    $(this).removeClass('active')
+    $('.btn-open').addClass('active')
+    $('.main').fadeIn()
+    $('.menu').fadeOut()
+  })
+  $('.menu-bar a').hover(function() {
+    const menuName = $(this).attr('class')
+    $('.menu').css('background-image', 'url(images/museum-' + menuName + '.jpg)')
+  })
+</script>
+</html>
