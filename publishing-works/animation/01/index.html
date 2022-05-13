@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Button</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- FontAwesome CDN -->
+  <script src="https://kit.fontawesome.com/1d7f6f41b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Button 1 -->
+    <h1>Toggle Button</h1>
+    <!-- outer border -->
+    <div class="btn-wrap btn1">
+      <!-- move when clicked -->
+      <div class="toggle"><span></span></div>
+    </div>
+    <!-- Button 2 -->
+    <h1>Toggle to Slow</h1>
+    <!-- outer border -->
+    <div class="btn-wrap btn2">
+      <!-- move when clicked -->
+      <div class="toggle"><span></span></div>
+    </div>
+    <!-- Button 3 -->
+    <h1>Dark Mode</h1>
+    <!-- outer border -->
+    <div class="btn-wrap btn3">
+      <!-- move when clicked -->
+      <div class="toggle"><span></span></div>
+    </div>
+  </div>
+</body>
+<script>
+  $('.btn-wrap').click(function() {
+    if($(this).hasClass('off')) {
+      $(this).removeClass('off')
+    } else {
+      $(this).addClass('off')
+    }
+    // Dark Mode
+    if($('.btn3').hasClass('off')) {
+      $('.container').addClass('dark')
+      $('.container h1').addClass('dark')
+    } else {
+      $('.container').removeClass('dark')
+      $('.container h1').removeClass('dark')
+    }
+  })
+</script>
+</html>

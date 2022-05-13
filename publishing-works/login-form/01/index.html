@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN -->
+  <script src="https://kit.fontawesome.com/1d7f6f41b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="profile-img">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <ul class="login-menu">
+        <li><label for="tab1">Sign In</label></li>
+        <li><label for="tab2">Sign Up</label></li>
+      </ul>
+      <div class="sign-in-area">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Sign In">
+        <div class="remember-btn">
+          <input type="checkbox" id="remember"><label for="remember">Remember me?</label>
+        </div>
+        <div class="area-down">
+          <a href="#none">Forgot your password?</a>
+        </div>
+      </div>
+      <div class="sign-up-area">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Sign Up">
+        <div class="area-down">
+          <p>Connerct with</p>
+          <a href="#none"><i class="fa-brands fa-google"></i></a>
+          <a href="#none"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#none"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
