@@ -516,6 +516,9 @@ nav a {
 }
 
 /* Portfolio 2 : Publishing Application Section */
+.publish-works .inner {
+  padding: 0;
+}
 .publish-content {
   display: flex;
   padding-bottom: 50px;
