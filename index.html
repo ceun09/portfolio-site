@@ -7,12 +7,17 @@
   <title>조은 포트폴리오</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="plugin/jquery-2.2.4.min.js"></script>
   <!-- FontAwesome CDN -->
   <script src="https://kit.fontawesome.com/1d7f6f41b8.js" crossorigin="anonymous"></script>
   <!-- Featherlight CDN -->
   <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   <script src="//code.jquery.com/jquery-latest.js"></script>
   <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Slick Slider CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -343,6 +348,7 @@
                 </a>
                 <span>System Section <br>with Hover Effect</span>
               </div>
+              <div class="item"></div>
             </div>
             <div class="items" id="pub-tab2" data-alt="pub-card">
               <div class="item">
@@ -351,6 +357,8 @@
                 </a>
                 <span>Team <br>Card Section</span>
               </div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
             </div>
             <div class="items" id="pub-tab3" data-alt="pub-ani">
               <div class="item">
@@ -359,6 +367,9 @@
                 </a>
                 <span>Toggle Buttons</span>
               </div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
             </div>
             <div class="items" id="pub-tab4" data-alt="pub-acc">
               <div class="item">
@@ -373,6 +384,9 @@
                 </a>
                 <span>Questions and Answers</span>
               </div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
             </div>
             <div class="items" id="pub-tab5" data-alt="pub-login">
               <div class="item">
@@ -387,11 +401,26 @@
                 </a>
                 <span>Login Form <br>with picture</span>
               </div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
+              <div class="item invisible"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      $(document).ready(function () {
+      $('.publish-content .items').slick({ 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        draggable: true,
+        infinite: false
+      })
+    })
+    </script>
   </div>
 </body>
 </html>

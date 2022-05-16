@@ -26,6 +26,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #222;
+  font-size: 62.5%;
   background: #fff;
 }
 .container {
@@ -42,6 +43,7 @@ section {
   height: auto;
   margin: 0 auto;
   padding: 50px;
+  /* border: 1px solid red; */
 }
 h1 {
   font-size: 36px;
@@ -105,7 +107,6 @@ header {
   position: fixed;
   width: 100%;
   background: #FFF;
-  /* background: #D7E0FF; */
   z-index: 999;
 }
 header .inner {
@@ -227,7 +228,6 @@ nav a {
 }
 .about-box .left .left-inner {
   width: 100%;
-  height: 300px;
   padding: 0 100px;
 }
 .about-box .right {
@@ -422,7 +422,6 @@ nav a {
 .web-works .tabmenu li.active {
   color: #8088DC;
   cursor: pointer;
-  /* border-bottom: 3px solid #8088DC; */
 }
 .web-works .tabmenu li::after {
   content: '';
@@ -545,29 +544,32 @@ nav a {
   color: #F3DD44;
   cursor: pointer;
 }
+/* Item Slider */
 .publish-content .items-wrap {
-  width: 70%;
+  width: 1000px;
+  height: 300px;
   position: relative;
 }
 .publish-content .items {
+  width: 100%;
+  height: 300px;
   display: none;
   position: absolute;
-  padding: 0 50px;
-  overflow: hidden;
+  left: 0;
+  top: 0;
 }
 .publish-content .items.active {
-  display: flex;
-  align-items: center;
+  display: block;
 }
-.publish-content .items .item {
+.publish-content .item {
+  width: 300px !important;
   position: relative;
-  width: 300px;
-  height: 300px;
   margin-right: 50px;
-  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   overflow: hidden;
-  cursor: pointer;
+}
+.publish-content .item.invisible {
+  display: none;
 }
 .publish-content .items .item::after { 
   content: '';
@@ -577,6 +579,7 @@ nav a {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
   transition: opacity 0.4s;
   opacity: 0;
   visibility: hidden;
@@ -586,15 +589,15 @@ nav a {
   opacity: 1;
   visibility: visible;
 }
-.publish-content .items .item img {
+.publish-content .item img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   transition: transform 0.4s;
   -webkit-transition: transform 0.4s;
   -moz-transition: transform 0.4s;
   -ms-transition: transform 0.4s;
   object-fit: cover;
-  border-radius: 5px;
 }
 .publish-content .items .item:hover img {
   transform: scale(1.2);
@@ -602,7 +605,7 @@ nav a {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
 }
-.publish-content .items .item span {
+.publish-content .items .item:hover span {
   width: 100%;
   display: none;
   position: absolute;
@@ -613,6 +616,7 @@ nav a {
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   color: #fff;
+  font-size: 20px;
   text-align: center;
   pointer-events: none; 
   z-index: 2;
@@ -621,8 +625,16 @@ nav a {
   display: block;
   font-size: 20px;
 }
+/* Slick Slider CSS */
+.slick-list {
+  height: 100%;
+}
+.slick-track {
+  height: 100%;
+  padding: 0 50px;
+}
 
-/* Featherlight Custom */
+/* Featherlight CSS */
 .featherlight iframe {
   width: 100%;
   height: 100%;

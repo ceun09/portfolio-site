@@ -32,6 +32,7 @@ window.onload = function() {
         activeTab = this.getAttribute('data-alt')
         document.getElementById(activeTab).classList.add('active')
       }
+      $('.publish-content .items').slick('setPosition')
     })
   }
 }
