@@ -444,6 +444,7 @@ nav a {
 .profile-sns .email {
   margin-left: 15px;
   color: #2f2f2f;
+  font-size: 16px;
 }
 .profile-sns .email:hover {
   color: #ED4C67;
@@ -461,6 +462,9 @@ nav a {
 .about-box .right li h2 {
   margin-bottom: 10px;
   font-size: 21px;
+}
+.about-box .right li p {
+  font-size: 15px;
 }
 /* Mobile Media Query */
 @media screen and (max-width:600px) {
@@ -499,7 +503,6 @@ nav a {
   }
   .profile-sns .email {
     margin: 0 auto;
-    font-size: 16px;
   }
   .profile-edu {
     margin-top: 30px;
@@ -517,9 +520,6 @@ nav a {
     padding: 35px;
     background: #fff;
     border-radius: 15px;
-  }
-  .about-box .right li p {
-    font-size: 15px;
   }
 }
 
@@ -549,7 +549,6 @@ nav a {
   -webkit-transform: skewX(5deg) skewY(-5deg);
   -moz-transform: skewX(5deg) skewY(-5deg);
   -ms-transform: skewX(5deg) skewY(-5deg);
-  
 }
 .skill-box .item:hover:nth-child(odd) {
   transform: skewX(-5deg) skewY(5deg);
@@ -599,6 +598,9 @@ nav a {
 .skill-box .item .text h2 {
   margin-bottom: 5px;
 }
+.skill-box .item .text p {
+  font-size: 15px;
+}
 /* Mobile Media Query */
 @media screen and (max-width:600px) {
   .skill-box {
@@ -625,9 +627,6 @@ nav a {
   }
   .skill-box .item .text {
     width: 370px;
-  }
-  .skill-box .item .text p {
-    font-size: 15px;
   }
   .skill-box .item:hover .icon {
     transform: scale(1.2);
