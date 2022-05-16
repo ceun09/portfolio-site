@@ -626,6 +626,9 @@ nav a {
   font-size: 20px;
 }
 /* Slick Slider CSS */
+.slick-slide {
+  width: 300px;
+}
 .slick-list {
   height: 100%;
 }
