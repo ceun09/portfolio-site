@@ -147,8 +147,107 @@ nav a {
 }
 /* Mobile Media Query */
 @media screen and (max-width:600px) {
+  header .inner {
+    padding: 0 20px;
+  }
   nav {
+    width: 360px;
+    height: 100vh;
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 50px 0;
+    background: #fff;
+    border-radius: 30px 0 0 30px;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  }
+  nav a {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 0 50px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  nav a:hover {
+    background: #e1e3f1;
+  }
+  .trigger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trigger-menu .icon {
+    width: 100%;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .trigger-menu .icon .bar {
+    width: 100%;
+    height: 4px;
+    background: #222;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .trigger-menu:hover {
+    cursor: pointer;
+  }
+  .trigger-menu:hover .icon .bar:nth-child(2) {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+  }
+  /* Mobile Trigger Menu */
+  .container.triggerOn::before {  /* Overay */
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+  .container.triggerOn nav {
+    display: block;
+  }
+  .trigger-menu.triggerOn .icon {
+    display: block;
+  }
+  .trigger-menu.triggerOn .icon .bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .trigger-menu.triggerOn .icon .bar:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
+  .trigger-menu.triggerOn .icon .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+  }
+  .trigger-menu.triggerOn .icon .bar:nth-child(2) {
+    display: none;
+  }
+  .trigger-menu.triggerOn .icon:hover .bar:nth-child(1) {
+    transform: rotate(0deg);
   }
 }
 
@@ -679,6 +778,10 @@ nav a {
 }
 
 /* Portfolio 2 : Publishing Application Section */
+.publish-works {
+  margin-bottom: 0;
+  padding-bottom: 100px;
+}
 .publish-works .inner {
   padding: 0;
 }
@@ -804,6 +907,7 @@ nav a {
     padding: 25px;
   }
   .publish-content {
+    height: 700px;
     flex-direction: column;
   }
   .publish-content .tabmenu {

@@ -1,4 +1,29 @@
 window.onload = function() {
+  /* Mobile Menu Trigger Start */
+  const trigger = document.querySelector(".trigger-menu");
+  trigger.addEventListener("click", function () {
+    this.classList.toggle("triggerOn"); // trigger 버튼에 활성화 클래스 부여
+    document.querySelector(".container").classList.toggle("triggerOn"); // Wrap에 활성화 클래스 부여
+  });
+  // Close menu if the area outside the menu is pressed
+  window.addEventListener("click", e => {
+    if(document.querySelector(".container").classList.contains("triggerOn")) {
+      const evTarget = e.target
+      if(evTarget.classList.contains("container")) {
+        trigger.classList.remove("triggerOn")
+        document.querySelector(".container").classList.remove("triggerOn")
+      }
+    }
+  })
+  // Close menu when ESC key is pressed
+  window.addEventListener("keyup", e => {
+    if(e.key === "Escape") {
+      trigger.classList.remove("triggerOn")
+      document.querySelector(".container").classList.remove("triggerOn")
+    }
+  })
+  /* Mobile Menu Trigger End */
+
   const webTabList = document.querySelectorAll('.web-works .tabmenu li') // 탭 버튼 부분 (Website)
   const pubTabList = document.querySelectorAll('.publish-works .tabmenu li') // 탭 버튼 부분 (Publishing)
   const webTab = document.querySelectorAll('.web-content') // 탭 내용 (Website)
