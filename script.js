@@ -32,7 +32,6 @@ window.onload = function() {
 
   for(var i = 0; i < webTabList.length; i++) {
     webTabList[i].addEventListener('click', function() {
-      console.log("web")
       for(var j = 0; j < webTabList.length; j++) {
         // 다른 탭에 붙은 클래스 삭제
         webTabList[j].classList.remove('active')
