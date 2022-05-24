@@ -34,8 +34,8 @@ $(document).ready(function () {
     autoplaySpeed: 2500,
     dots: false,
     arrows: true,
-    prevArrow:"<button type='button' class='slick-prev'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow:"<button type='button' class='slick-prev'></button>",
+    nextArrow:"<button type='button' class='slick-next'></button>",
     draggable: false
   })
 
