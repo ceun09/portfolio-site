@@ -1,0 +1,35 @@
+@mixin font($size: 16px, $weight: normal, $color: #000) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  @content;
+}
+
+@mixin box(
+  $padding: null, 
+  $margin: null
+  ) {
+  padding: $padding;
+  margin: $margin;
+  @content;
+}
+
+@mixin flex (
+  $direction: row,
+  $aign-items: null,
+  $justify-content: null,
+  $wrap: null
+) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $aign-items;
+  justify-content: $justify-content;
+  flex-wrap: $wrap;
+  @content;
+}
+
+@mixin img-default {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

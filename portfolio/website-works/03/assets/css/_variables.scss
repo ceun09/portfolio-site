@@ -1,0 +1,30 @@
+$max-width: 1300px;
+$mobile-width: 767px;
+$gg-title: '"GyeonggiTitleM"';
+$gg-batang: '"GyeonggiBatang"';
+
+// Default Color
+$black-default: #222;
+$black-half: #353535;
+$black-light: #555;
+$gray: #DFE4EA;
+$main-darkblue: #2A2986;
+$main-blue: #3666C6;
+$main-green: #40C29E;
+$main-yellow: #FFE153;
+$accent-blue: #1D82D5;
+$accent-lightblue: #7EDDF9;
+$accent-green: #2CB2BC;
+$overay-10: rgba(0,0,0,0.1);
+$overay-30: rgba(0,0,0,0.3);
+$overay-50: rgba(0,0,0,0.5);
+$overay-white: rgba(255,255,255,0.5);
+$overay-white-80: rgba(255,255,255,0.8);
+
+// Mobile Media Query
+@mixin mobileQuery {
+  @media screen and(max-width: $mobile-width) {
+    max-width: $mobile-width;
+    @content;
+  };
+}
