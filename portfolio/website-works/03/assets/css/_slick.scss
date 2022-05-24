@@ -1,0 +1,130 @@
+@import '_variables.scss';
+
+/* Slick Slider Custom CSS */
+.slick-slider {
+  position: relative;
+}
+
+/* Main Slider */
+// paging button
+.main-paging {
+  .slick-dots {
+    $dot-size: 15px;
+    $outline-size: calc(#{$dot-size} + 5px);
+    li {
+      display: inline-block;
+      width: $outline-size;
+      height: $outline-size;
+      text-align: center;
+      button {
+        width: $dot-size;
+        height: $dot-size;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        font-size: 0;
+        line-height: calc(#{$outline-size} + 10px);
+      }
+      &.slick-active {
+        button {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* Theme Slider */
+.theme-slider-wrap {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: $overay-10;
+    border-radius: 50%;
+  }
+  .slick-prev {
+    left: 20px;
+  }
+  .slick-next {
+    right: 20px;
+  }
+}
+.theme-slider {
+  padding: 0 50px;
+}
+
+/* Media Slider */
+.media-slider {
+  position: relative;
+  .slick-list {
+    width: 600px;
+    margin: 0 auto;
+    .slick-slide {
+      width: 600px !important;
+    }
+  }
+}
+
+/* Notice Slider */
+.notice-paging {
+  $default-color: #fff;
+  $active-color: #999;
+  $btn-size: 15px;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  button {
+    width: $btn-size;
+    height: $btn-size;
+    font-size: 0;
+    background: $default-color;
+    border: 1px solid #{$active-color};
+    border-radius: 50%;
+  }
+  .slick-active {
+    button {
+      background: $active-color;
+    }
+  }
+}
+.notice-slider {
+  position: relative;
+  .slick-list {
+    width: 830px;
+    height: 100%;
+    margin: 0 auto;
+    .slick-track {
+      height: 100%;
+      .slick-slide {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Footer Logo Slider */
+.footer-logo-area {
+  .logo-wrap {
+    .slick-slider {
+      padding: 0 !important;
+    }
+    .slick-slide {
+      margin: 0 40px;
+    }
+    .slick-list {
+      margin: 0 -40px;
+      margin: 0 auto;
+      height: 100%;
+    }
+    .slick-track {
+      margin: 0 auto;
+      height: 100%;
+    }
+  }
+}
