@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --main-color: #FF0000;
+  --red-dark: #CC3333;
+  --red-light: #ff685d;
+  --red-active: #C71E00;
+  --white: #f0f4f5;
+  --black: #202124;
+  --gray800: #3C4043;
+  --gray700: #5F6368;
+  --gray400: #BDC1C6;
+  --gray200: #E8EAED;
+  --btn-gray: #6C757D;
+  --btn-gray-active: #4E5A65;
+  --btn-blue: #18A0FB;
+  --bg-white: #F8F9FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Noto Sans KR', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f4f5;
+}
+
+
+/* 내비게이션 */
+a:link, a:visited {
+  color: var(--red-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+a.menu-gray:link, a.menu-gray:visited {
+  color: var(--btn-gray);
+}
+
+a.menu-gray:hover {
+  color: var(--btn-gray-active);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.navbar {
+  width: 100vw;
+  height: 85px;
+  font-size: 2rem;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+}
+
+.navbar ul li {
+  width: 100vw;
+  text-align: center;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  line-height: 85px;
+  width: 100%;
+}
+
+.navbar_logo {
+  display: flex;
+  width: 120px;
+  height: auto;
+}
+
+.navbar img {
+  width: inherit;
+  height: inherit;
+  margin: 7px 0 0 15px;
+}
+
+.navbar a#trigger {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  font-size: 3.6rem;
+  line-height: 85px;
+}
+
+.navbar > ul.active {
+  display: flex;
+}
+
+@media screen and (min-width:768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar ul {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    background: none;
+  }
+  .navbar a#trigger {
+    display: none;
+  }
+}
+
+/* 섹션 */
+section {
+  width:100vw;
+  max-width: 1300px;
+  position:relative;
+  margin: 0 auto;
+}
+.section-title h1 {
+  font-size: 4.8rem;
+}
+.section-title h2 {
+  color: var(--black);
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+.section-txt {
+  font-size: 2rem;
+}
+.wrapper {
+  padding-top:40px;
+  padding-bottom:40px;
+  background:transparent;
+}
+
+/* 버튼 */
+a.btn {
+  display: inline-block;
+  width: auto;
+  height: 35px;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 35px;
+  padding: 5px 25px;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+a.btn-red {
+  color: var(--white);
+  background: var(--main-color);
+}
+
+a.btn-red:hover {
+  background: var(--red-active);
+}
+
+a.btn-gray {
+  color: var(--btn-gray);
+  background: transparent;
+  border: 1px solid #6C757D;
+}
+
+a.btn-gray:hover {
+  color: var(--white);
+  background: var(--gray400);
+  border: 1px solid #BDC1C6;
+}
+
+a.btn-blue {
+  color: var(--btn-blue);
+  background: transparent;
+  border: 1px solid #18A0FB;
+}
+
+a.btn-blue:hover {
+  color: var(--white);
+  background: var(--btn-blue);
+  border: 1px solid #18A0FB;
+}
+
+/* 메인 영역 */
+.main-top {
+  height: auto;
+  padding: 80px 30px;
+  }
+
+.main-top .btns {
+  margin-top: 40px;
+}
+
+.main-top .btns ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+.main-top .btns ul li:first-child {
+  margin-right: 15px;
+}
+
+@media screen and (min-width:768px) {
+  .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .main-top {
+    background: url('images/java_home_photo.png') no-repeat 75% 75%;
+  }
+}
+
+.main-top a.btn {
+  padding: 5px 30px;
+}
+
+/* 자바란 무엇인가?
+   최신 버전으로 업그레이드
+ */
+.main-text {
+  text-align: center;
+}
+
+.main-text > .wrapper {
+  width: 100vw;
+  max-width: 760px;
+}
+
+.main-text .img {
+  width: 30vw;
+  min-width: 300px;
+  margin: 20px auto;
+}
+
+.main-text .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main-text .text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-text .btn {
+  margin-top: 20px;
+}
+
+.img-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.section-txt p {
+  font-size: 1.6rem;
+  color: var(--gray800);
+}
+
+@media screen and (min-width:768px) {
+  .main-text > .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .img {
+    flex: 1;
+  }
+  .text {
+    flex: 2;
+  }
+  .txt-sort-right {
+    margin-left: 30px;
+  }
+  .txt-sort-left {
+    margin-right: 30px;
+    text-align: right;
+  }
+}
+
+/* Java 정보 */
+.main-sites {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-sites .section-title {
+  margin-bottom: 40px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 450px;
+  height: 250px;
+  background: var(--red-dark);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  font-family: 'Lato', sans-serif;
+}
+
+.box .site_name {
+  font-size: 3.2rem;
+  color: var(--white);
+}
+
+.box .site_text {
+  display: none;
+  font-size: 2rem;
+  color: var(--gray200);
+  margin-top: 20px;
+  padding: 0 90px;
+}
+
+.box:hover .site_text {
+  display: block;
+}
+
+.box:hover {
+  background: var(--red-light);
+  transition: 0.6s;
+}
+
+@media screen and (min-width:768px) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* Java 설치 도움말 */
+.main-help {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.help {
+  margin-top: 40px;
+}
+
+.help-box {
+  width: 100vw;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  margin: 0 auto;
+}
+
+.accordion {
+  width: 100%;
+  text-align: left;
+  font-size: 1.8rem;
+  color: var(--gray700);
+  background: transparent;
+  /* background-color: #fff; */
+  border: 0;
+  outline: none;
+  padding: 30px 30px 30px 50px;
+  border-bottom: 1px solid var(--btngray);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordion:hover {
+  background-color: #eee;
+  transition: 0.6s;
+}
+
+.accordion:after {
+  content: '\2795';
+  font-size: 1.4rem;
+  color: rgba(0,0,0,0);
+  text-shadow: 0 0 var(--gray400);
+  float: right;
+}
+
+.main-help .active:after {
+  content:'\2796'
+}
+
+.panel {
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--gray800);
+  background-color: var(--white);
+  max-height: 0;
+  padding: 30px 50px 30px 50px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+.txt-section {
+  width: 100%;
+}
+
+.txt-section h4 {
+  padding-bottom: 10px;
+}
+
+.txt-section > ul > li {
+  margin: 40px 0;
+}
+
+.txt-section ul > ul {
+  margin: 50px 0;
+}
+
+.txt-section ul > ul li {
+  text-indent: -20px;
+  padding-left: 20px;
+  list-style: inside;
+}
+
+.txt-section .list-number li {
+  list-style: decimal;
+  text-indent: 0;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* JDK 설치 */
+.main-down {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-down .section-title {
+  margin-bottom: 40px;
+}
+
+.main-down .btns ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+.main-down .btns ul li:first-child {
+  margin-right: 15px;
+}
+
+@media screen and (min-width:768px) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .main-down {
+    display: block;
+  }
+}
+
+/* 푸터 영역 */
+footer {
+  width: 100vw;
+  background: var(--bg-white);
+  padding: 0 40px;
+}
+
+footer .wrapper > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.footer-menu {
+  font-size: 1.4rem;
+}
+
+.footer-menu h4 {
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.footer-menu .menu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
