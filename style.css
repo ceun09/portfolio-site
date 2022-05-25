@@ -129,6 +129,9 @@ header .logo {
   line-height: 60px;
   text-transform: uppercase;
 }
+header .logo:focus {
+  outline: 2px solid #222;
+}
 .dark-theme {
   display: flex;
   align-items: center;
