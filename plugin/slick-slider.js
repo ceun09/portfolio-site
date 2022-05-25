@@ -1,22 +1,20 @@
 $(document).ready(function () {
   var slickOptions = {
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
     arrows: false,
-    draggable: true,
+    draggable: false,
+    touchMove: false,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
-  $(window).on("load resize", function () {
-    if ($(window).width() < 600) {
-      // 창 크기가 600보다 작을 때 Slick 해제
-      $(".publish-content .items")
-        .filter(".slick-initialized")
-        .slick("unslick");
-    } else {
-      $(".publish-content .items")
-        .not(".slick-initialized")
-        .slick(slickOptions);
-    }
-  });
+  $(".publish-content .items").slick(slickOptions);
 });
