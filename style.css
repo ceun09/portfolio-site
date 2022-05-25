@@ -34,14 +34,11 @@ body {
   width: 100%;
   height: 100%;
 }
-section {
-  margin-bottom: 100px;
-}
 .inner {
   max-width: 1300px;
   height: auto;
   margin: 0 auto;
-  padding: 50px;
+  padding: 100px;
 }
 h1 {
   font-size: 36px;
@@ -119,26 +116,68 @@ header {
   z-index: 999;
 }
 header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 60px;
   padding: 0 50px;
 }
 header .logo {
+  float: left;
+  height: 100%;
   color: #222;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 800;
+  line-height: 60px;
   text-transform: uppercase;
 }
+.dark-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 5%;
+  min-width: 50px;
+  height: 100%;
+}
+.dark-theme-btn {
+  position: relative;
+  width: 85%;
+  height: 40%;
+  float: right;
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.dark-theme-btn .toggle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30%;
+  height: 70%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(30%, -50%);
+  transition: transform 0.4s;
+}
+.dark-theme-btn.active {
+  background: #fff;
+}
+.dark-theme-btn.active .toggle {
+  background: #555;
+  transform: translate(200%, -50%);
+}
 nav {
-  width: 50%;
-  min-width: 340px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  width: 62%;
+  min-width: 340px;
+  float: right;
+}
+nav::after {
+  content: '';
+  clear: both;
 }
 nav a {
   display: inline-block;
@@ -182,12 +221,18 @@ nav a {
   nav a:hover {
     background: #e1e3f1;
   }
+  .dark-theme {
+    float: right;
+    margin-right: 30px;
+  }
   .trigger-menu {
-    width: 30px;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
   }
   .trigger-menu .icon {
     width: 100%;
@@ -489,12 +534,14 @@ nav a {
     margin: 0 auto 50px;
   }
   .web-content .left {
+    width: 100%;
     margin-bottom: 60px;
   }
   .web-content .right {
     width: 100%;
     padding: 0 30px;
     margin-left: 0;
+    text-align: center;
   }
   .web-content .right h2 {
     width: fit-content;
@@ -519,7 +566,7 @@ nav a {
   padding-bottom: 100px;
 }
 .publish-works .inner {
-  padding: 0;
+  padding: 100px 0;
 }
 .publish-content {
   display: flex;
@@ -571,6 +618,7 @@ nav a {
   max-height: 300px;
   margin-right: 60px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 .publish-content .items .item::after { 
@@ -718,14 +766,9 @@ nav a {
     width: 100%;
   }
   .publish-content .item {
-    /* width: 235px !important;
-    height: 235px; */
     display: inline-block;
     margin-right: 30px;
   }
-  /* .publish-content .item:nth-child(even) {
-    margin-right: 0;
-  } */
   .slick-track {
     padding: 0 20px;
   }
@@ -1003,4 +1046,114 @@ nav a {
 }
 .featherlight .featherlight-close-icon:hover {
   color: red;
+}
+
+/* Dark Theme CSS */
+body[data-theme="dark"] {
+  color: #EEEEEE;
+  background: #222;
+}
+body[data-theme="dark"] header {
+  background: #2f2f2f;
+}
+body[data-theme="dark"] header .logo,
+body[data-theme="dark"] nav a {
+  color: #EEEEEE;
+}
+body[data-theme="dark"] h2.dot::before {
+  background: #D65A31;
+}
+body[data-theme="dark"] .heading span {
+  color: #D65A31;
+}
+body[data-theme="dark"] .heading h1::after {
+  background: #D65A31;
+}
+body[data-theme="dark"] .intro-heading h1 {
+  color: #EEEEEE;
+}
+body[data-theme="dark"] .intro-heading h1 span {
+  color: #D65A31;
+}
+body[data-theme="dark"] .intro-heading p span:hover {
+  color: #D65A31;
+}
+body[data-theme="dark"] .web-works .tabmenu li a {
+  color: #EEEEEE;
+}
+body[data-theme="dark"] .web-works .tabmenu li::after {
+  background: #D65A31;
+}
+body[data-theme="dark"] .web-content .right .btns a {
+  background: #EEEEEE;
+}
+body[data-theme="dark"] .publish-content .tabmenu {
+  background: #D65A31;
+}
+body[data-theme="dark"] .publish-content .tabmenu li:hover a,
+body[data-theme="dark"] .publish-content .tabmenu li.active a {
+  color: #205375;
+}
+body[data-theme="dark"] .slick-dots li button {
+  border: 1px solid #D65A31;
+}
+body[data-theme="dark"] .slick-dots .slick-active button {
+  background: #D65A31;
+}
+body[data-theme="dark"] .skill-box .item {
+  background: #eee;
+}
+body[data-theme="dark"] .skill-box .item .text h2,
+body[data-theme="dark"] .skill-box .item .text p {
+  color: #222;
+}
+body[data-theme="dark"] .about h1,
+body[data-theme="dark"] .about h2,
+body[data-theme="dark"] .about p {
+  color: #222;
+}
+body[data-theme="dark"] .about {
+  background: #D65A31;
+}
+body[data-theme="dark"] .about h2.dot::before {
+  background: #eee;
+}
+body[data-theme="dark"] .about .heading h1::after {
+  background: #eee;
+}
+body[data-theme="dark"] .profile-sns .github:hover,
+body[data-theme="dark"] .profile-sns .email:hover {
+  color: #eee;
+}
+
+@media screen and (max-width:600px) {
+  body[data-theme="dark"] .trigger-menu .icon .bar {
+    background: #EEEEEE;
+  }
+  body[data-theme="dark"] .publish-content .tabmenu {
+    background: transparent;
+  }
+  body[data-theme="dark"] .publish-content .tabmenu li::after {
+    background: #D65A31;
+  }
+  body[data-theme="dark"] .publish-content .tabmenu li a {
+    color: #EEEEEE;
+  }
+  body[data-theme="dark"] .publish-content .tabmenu li:hover a,
+  body[data-theme="dark"] .publish-content .tabmenu li.active a {
+    color: #eee;
+  }
+  body[data-theme="dark"] .skill-box .item {
+    background: transparent;
+  }
+  body[data-theme="dark"] .skill-box .item .text h2,
+  body[data-theme="dark"] .skill-box .item .text p {
+    color: #EEEEEE;
+  }
+  body[data-theme="dark"] .about h1 {
+    color: #eee;
+  }
+  body[data-theme="dark"] .about h2.dot::before {
+    background: #D65A31;
+  }
 }

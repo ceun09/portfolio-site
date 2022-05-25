@@ -1,4 +1,20 @@
 window.onload = function() {
+  /* Dark Theme Button */
+  const darkBtn = document.querySelector('.dark-theme-btn');
+
+  darkBtn.addEventListener('click', function() {
+    themeCheck()
+    this.classList.toggle('active')
+  })
+  
+  function themeCheck() {
+    if(darkBtn.classList.contains('active')) {
+      document.querySelector('body').removeAttribute('data-theme')
+    } else {
+      document.querySelector('body').setAttribute('data-theme', 'dark')
+    }
+  }
+
   /* Mobile Menu Trigger Start */
   const trigger = document.querySelector(".trigger-menu");
   trigger.addEventListener("click", function () {
@@ -24,6 +40,7 @@ window.onload = function() {
   })
   /* Mobile Menu Trigger End */
 
+  /* Tabmenu Start */
   const webTabList = document.querySelectorAll('.web-works .tabmenu li') // 탭 버튼 부분 (Website)
   const pubTabList = document.querySelectorAll('.publish-works .tabmenu li') // 탭 버튼 부분 (Publishing)
   const webTab = document.querySelectorAll('.web-content') // 탭 내용 (Website)
@@ -59,4 +76,5 @@ window.onload = function() {
       $('.publish-content .items').slick('setPosition')
     })
   }
+  /* Tabmenu End */
 }
